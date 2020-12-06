@@ -22,12 +22,20 @@ namespace ASBbackend.Controllers
             _context = context;
         }
 
+        /// GET: api/CreditCards
+        /// <summary>
+        /// Retrieves all CreditCards
+        /// </summary>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CreditCard>>> GetCreditCards()
         {
             return await _context.CreditCards.ToListAsync();
         }
 
+        /// GET: api/CreditCards/5
+        /// <summary>
+        /// Retrieves a specific CreditCard by unique id
+        /// </summary>
         [HttpGet("{id}")]
         public async Task<ActionResult<CreditCard>> GetCreditCard(Guid id)
         {
@@ -42,6 +50,11 @@ namespace ASBbackend.Controllers
             return creditCard;
         }
 
+        /// POST: api/CreditCards
+        /// <summary>
+        /// Create a CreditCard
+        /// </summary>
+        /// <response code="200">CreditCard created</response>
         [HttpPost]
         public async Task<ActionResult<CreditCard>> PostCreditCard(CreditCard creditCard)
         {

@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 using ASBbackend.Models;
+using System.IO;
 
 namespace ASBbackend
 {
@@ -33,6 +34,8 @@ namespace ASBbackend
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ASBbackend", Version = "v1" });
+                var filePath = Path.Combine(System.AppContext.BaseDirectory, "ASBbackend.xml");
+                c.IncludeXmlComments(filePath);
             });
         }
 
