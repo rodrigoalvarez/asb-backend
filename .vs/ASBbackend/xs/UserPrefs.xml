@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{FFFC5C44-A6A8-4C0B-A9BF-EB27235A51BD}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ASBbackend/Controllers/CreditCardsController.cs">
+    <Files>
+      <File FileName="ASBbackend/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="ASBbackend/appsettings.json" Line="1" Column="1" />
+      <File FileName="ASBbackend/Startup.cs" Line="1" Column="1" />
+      <File FileName="ASBbackend/Models/CreditCardContext.cs" Line="9" Column="10" />
+      <File FileName="ASBbackend/Models/CreditCard.cs" Line="11" Column="6" />
+      <File FileName="ASBbackend/Controllers/CreditCardsController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ASBbackend" expanded="True">
+            <Node name="ASBbackend" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="CreditCardsController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ASBbackend PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

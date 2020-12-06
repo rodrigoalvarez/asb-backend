@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore;
+using ASBbackend.Models;
 
 namespace ASBbackend
 {
@@ -26,7 +28,7 @@ namespace ASBbackend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddDbContext<CreditCardContext>(opt => opt.UseInMemoryDatabase("CreditCardsList"));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
